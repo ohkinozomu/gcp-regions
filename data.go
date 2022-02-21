@@ -1,167 +1,166 @@
 package regions
 
-const REGION_DATA string = `
-{
-	"asia-east1":{
-		"name":"Taiwan",
-		"flag": "https://upload.wikimedia.org/wikipedia/commons/7/72/Flag_of_the_Republic_of_China.svg",
-		"latitude": 23.69781,
-		"longitude": 120.960515
+var REGION_DATA = map[string]Region{
+	"asia-east1": Region{
+		Name:      "Taiwan",
+		Flag:      "https://upload.wikimedia.org/wikipedia/commons/7/72/Flag_of_the_Republic_of_China.svg",
+		Latitude:  23.69781,
+		Longitude: 120.960515,
 	},
-	"asia-east2":{
-		"name":"Hong Kong",
-		"flag": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Flag_of_Hong_Kong.svg",
-		"latitude": 22.396428,
-		"longitude": 114.109497
+	"asia-east2": Region{
+		Name:      "Hong Kong",
+		Flag:      "https://upload.wikimedia.org/wikipedia/commons/5/5b/Flag_of_Hong_Kong.svg",
+		Latitude:  22.396428,
+		Longitude: 114.109497,
 	},
-	"asia-northeast1":{
-		"name":"Tokyo",
-		"flag": "https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg",
-		"latitude": 35.6762,
-		"longitude": 139.6503
+	"asia-northeast1": Region{
+		Name:      "Tokyo",
+		Flag:      "https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg",
+		Latitude:  35.6762,
+		Longitude: 139.6503,
 	},
-	"asia-northeast2":{
-		"name":"Osaka",
-		"flag": "https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg",
-		"latitude": 34.6937,
-		"longitude": 135.5023
+	"asia-northeast2": Region{
+		Name:      "Osaka",
+		Flag:      "https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg",
+		Latitude:  34.6937,
+		Longitude: 135.5023,
 	},
-	"asia-northeast3":{
-		"name":"Seoul",
-		"flag": "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg",
-		"latitude": 37.5665,
-		"longitude": 126.9780
+	"asia-northeast3": Region{
+		Name:      "Seoul",
+		Flag:      "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg",
+		Latitude:  37.5665,
+		Longitude: 126.978,
 	},
-	"asia-south1":{
-		"name":"Delhi",
-		"flag": "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
-		"latitude": 19.0760,
-		"longitude": 72.8777
+	"asia-south1": Region{
+		Name:      "Delhi",
+		Flag:      "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
+		Latitude:  19.076,
+		Longitude: 72.8777,
 	},
-	"asia-south2":{
-		"name":"Mumbai",
-		"flag": "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
-		"latitude": 28.7041,
-		"longitude": 77.1025
+	"asia-south2": Region{
+		Name:      "Mumbai",
+		Flag:      "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
+		Latitude:  28.7041,
+		Longitude: 77.1025,
 	},
-	"asia-southeast1":{
-		"name":"Singapore",
-		"flag": "https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Singapore.svg",
-		"latitude": 1.3521,
-		"longitude": 103.8198
+	"asia-southeast1": Region{
+		Name:      "Singapore",
+		Flag:      "https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Singapore.svg",
+		Latitude:  1.3521,
+		Longitude: 103.8198,
 	},
-	"asia-southeast2":{
-		"name":"Jakarta",
-		"flag": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg",
-		"latitude": -6.2088,
-		"longitude": 106.8456
+	"asia-southeast2": Region{
+		Name:      "Jakarta",
+		Flag:      "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg",
+		Latitude:  -6.2088,
+		Longitude: 106.8456,
 	},
-	"australia-southeast1":{
-		"name":"Sydney",
-		"flag": "https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_Australia_%28converted%29.svg",
-		"latitude": -33.8688,
-		"longitude": 151.2093
+	"australia-southeast1": Region{
+		Name:      "Sydney",
+		Flag:      "https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_Australia_%28converted%29.svg",
+		Latitude:  -33.8688,
+		Longitude: 151.2093,
 	},
-	"australia-southeast2":{
-		"name":"Melbourne",
-		"flag": "https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_Australia_%28converted%29.svg",
-		"latitude": -37.8136,
-		"longitude": 144.9631
+	"australia-southeast2": Region{
+		Name:      "Melbourne",
+		Flag:      "https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_Australia_%28converted%29.svg",
+		Latitude:  -37.8136,
+		Longitude: 144.9631,
 	},
-	"europe-central2":{
-		"name":"Warsaw, Poland",
-		"flag": "https://upload.wikimedia.org/wikipedia/en/1/12/Flag_of_Poland.svg",
-		"latitude": 52.2297,
-		"longitude": 21.0122
+	"europe-central2": Region{
+		Name:      "Warsaw, Poland",
+		Flag:      "https://upload.wikimedia.org/wikipedia/en/1/12/Flag_of_Poland.svg",
+		Latitude:  52.2297,
+		Longitude: 21.0122,
 	},
-	"europe-north1":{
-		"name":"Hamina, Finland",
-		"flag": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg",
-		"latitude": 60.5693,
-		"longitude": 27.1878
+	"europe-north1": Region{
+		Name:      "Hamina, Finland",
+		Flag:      "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg",
+		Latitude:  60.5693,
+		Longitude: 27.1878,
 	},
-	"europe-west1":{
-		"name":"Belgium",
-		"flag": "https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_Belgium_%28civil%29.svg",
-		"latitude": 50.5039,
-		"longitude": 4.4699
+	"europe-west1": Region{
+		Name:      "Belgium",
+		Flag:      "https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_Belgium_%28civil%29.svg",
+		Latitude:  50.5039,
+		Longitude: 4.4699,
 	},
-	"europe-west2":{
-		"name":"London, UK",
-		"flag": "https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg",
-		"latitude": 51.5074,
-		"longitude": -0.1278
+	"europe-west2": Region{
+		Name:      "London, UK",
+		Flag:      "https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg",
+		Latitude:  51.5074,
+		Longitude: -0.1278,
 	},
-	"europe-west3":{
-		"name":"Frankfurt, Germany",
-		"flag": "https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg",
-		"latitude": 50.1109,
-		"longitude": 8.6821
+	"europe-west3": Region{
+		Name:      "Frankfurt, Germany",
+		Flag:      "https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg",
+		Latitude:  50.1109,
+		Longitude: 8.6821,
 	},
-	"europe-west4":{
-		"name":"Netherlands",
-		"flag": "https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg",
-		"latitude": 52.1326,
-		"longitude": 5.2913
+	"europe-west4": Region{
+		Name:      "Netherlands",
+		Flag:      "https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg",
+		Latitude:  52.1326,
+		Longitude: 5.2913,
 	},
-	"europe-west6":{
-		"name":"Zurich, Switzerland",
-		"flag": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg",
-		"latitude": 47.3769,
-		"longitude": 8.5417
+	"europe-west6": Region{
+		Name:      "Zurich, Switzerland",
+		Flag:      "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg",
+		Latitude:  47.3769,
+		Longitude: 8.5417,
 	},
-	"northamerica-northeast1":{
-		"name":"Montréal, Canada",
-		"flag": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg",
-		"latitude": 45.5017,
-		"longitude": -73.5673
+	"northamerica-northeast1": Region{
+		Name:      "Montréal, Canada",
+		Flag:      "https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg",
+		Latitude:  45.5017,
+		Longitude: -73.5673,
 	},
-	"southamerica-east1":{
-		"name":"São Paulo",
-		"flag": "https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg",
-		"latitude": -23.5505,
-		"longitude": -46.6333
+	"southamerica-east1": Region{
+		Name:      "São Paulo",
+		Flag:      "https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg",
+		Latitude:  -23.5505,
+		Longitude: -46.6333,
 	},
-	"us-central1":{
-		"name":"Iowa, USA",
-		"flag": "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
-		"latitude": 41.8780,
-		"longitude": -93.0977
+	"us-central1": Region{
+		Name:      "Iowa, USA",
+		Flag:      "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
+		Latitude:  41.878,
+		Longitude: -93.0977,
 	},
-	"us-east1":{
-		"name":"South Carolina, USA",
-		"flag": "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
-		"latitude": 33.8361,
-		"longitude": -81.1637
+	"us-east1": Region{
+		Name:      "South Carolina, USA",
+		Flag:      "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
+		Latitude:  33.8361,
+		Longitude: -81.1637,
 	},
-	"us-east4":{
-		"name":"Northern Virginia, USA",
-		"flag": "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
-		"latitude": 38.8334,
-		"longitude": -77.2365
+	"us-east4": Region{
+		Name:      "Northern Virginia, USA",
+		Flag:      "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
+		Latitude:  38.8334,
+		Longitude: -77.2365,
 	},
-	"us-west1":{
-		"name":"Oregon, USA",
-		"flag": "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
-		"latitude": 43.8041,
-		"longitude": -120.5542
+	"us-west1": Region{
+		Name:      "Oregon, USA",
+		Flag:      "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
+		Latitude:  43.8041,
+		Longitude: -120.5542,
 	},
-	"us-west2":{
-		"name":"Los Angeles, USA",
-		"flag": "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
-		"latitude": 34.0522,
-		"longitude": -118.2437
+	"us-west2": Region{
+		Name:      "Los Angeles, USA",
+		Flag:      "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
+		Latitude:  34.0522,
+		Longitude: -118.2437,
 	},
-	"us-west3":{
-		"name":"Salt Lake City, USA",
-		"flag": "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
-		"latitude": 40.7608,
-		"longitude": -111.8910
+	"us-west3": Region{
+		Name:      "Salt Lake City, USA",
+		Flag:      "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
+		Latitude:  40.7608,
+		Longitude: -111.891,
 	},
-	"us-west4":{
-		"name":"Las Vegas, USA",
-		"flag": "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
-		"latitude": 36.1699,
-		"longitude": -115.1398
-	}
-}`
+	"us-west4": Region{
+		Name:      "Las Vegas, USA",
+		Flag:      "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
+		Latitude:  36.1699,
+		Longitude: -115.1398,
+	},
+}

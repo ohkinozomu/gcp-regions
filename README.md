@@ -7,8 +7,16 @@ This project is not officially supported or endorsed by Google in any way.
 # Example
 
 ```go
-// true
-fmt.Println(regions.IsValid("us-central1"))
+import(
+	"fmt"
+  
+	regions "github.com/ohkinozomu/gcp-regions"
+)
+
+func main() {
+	// true
+	fmt.Println(regions.IsValid("us-central1"))
+}
 ```
 
 # License

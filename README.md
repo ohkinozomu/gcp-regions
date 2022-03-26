@@ -16,6 +16,9 @@ import(
 func main() {
 	// true
 	fmt.Println(regions.IsValid("us-central1"))
+
+	// false
+	fmt.Println(regions.IsValid("us-central1000"))
 }
 ```
 

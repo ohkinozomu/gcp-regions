@@ -1,8 +1,10 @@
 package regions
 
 func IsValid(name string) bool {
-	if _, ok := REGION_DATA[name]; ok {
-		return true
+	for _, r := range REGIONS {
+		if r == name {
+			return true
+		}
 	}
 	return false
 }

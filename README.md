@@ -25,5 +25,3 @@ func main() {
 # License
 
 Apache-2.0
-
-`data.go` is generated from [GoogleCloudPlatform/region-picker](https://github.com/GoogleCloudPlatform/region-picker/blob/main/data/regions.json).
